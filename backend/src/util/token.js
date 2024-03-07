@@ -2,12 +2,8 @@
 const crypto = require('crypto');
 
 const generateRandomToken = () => {
-  return crypto.randomBytes(20).toString('hex'); // 20 bytes converted to hexadecimal string
+  const randomBytes = crypto.randomBytes(20);
+  return crypto.createHash('sha1').update(randomBytes).digest('hex');
 };
 
 module.exports = generateRandomToken;
-
-
-//const generateRandomToken = require('./util/token');
-// Example usage
-//const randomToken = generateRandomToken();
