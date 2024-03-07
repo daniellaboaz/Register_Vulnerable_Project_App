@@ -1,0 +1,31 @@
+
+{
+    "passwordPolicy": {
+      "minLength": 10,
+      "requiredCharacterTypes": 3,
+      "characterTypes": ["lowercase", "uppercase", "number", "special"],
+      "errorMessage": "Password must be at least 10 characters long and include at least 3 of the following categories: lowercase, uppercase, number, special character.",
+      "commonPasswords": [
+        "Password1!",
+        "Secure123!",
+        "StrongPwd456!",
+        "Secret@789",
+        "SuperP@ssword1",
+        "P@ssw0rd!",
+        "SafePwd123$",
+        "UserPass1*",
+        "123Qwerty!",
+        "P@ssw0rd123",
+        "Strong123!",
+        "Secret@567",
+        "MyPwd@789",
+        "Pa$$w0rd1",
+        "123Abc$%^",
+        "P@ssword!23",
+        "SecurePwd123",
+        "Complex1@",
+        "TestP@ssword1"
+      ]
+    }
+  }
+  
